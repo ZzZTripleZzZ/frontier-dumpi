@@ -1,0 +1,21 @@
+{
+    "name": "Frontier Simulator",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "remoteEnv": {
+        "LD_LIBRARY_PATH": "/usr/local/sst-dumpi/lib:${containerEnv:LD_LIBRARY_PATH}"
+    },
+    "runArgs": [
+        "--shm-size=4g"
+    ],
+    "remoteUser": "root"
+}

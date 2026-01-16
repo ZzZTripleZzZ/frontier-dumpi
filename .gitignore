@@ -1,0 +1,14 @@
+cat <<EOT > .gitignore
+# 忽略所有数据和 Trace
+*.bin
+*.npy
+data/
+raps_output/
+src/raps_output/
+
+# 忽略编译文件
+build/
+*.o
+*.so
+__pycache__/
+EOT
